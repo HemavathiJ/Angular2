@@ -1,0 +1,27 @@
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="http://lorempixel.com/100/100/people?1" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      <div>Description goes here</div>
+      <app-likebutton [liked] = "tweet.liked" [totalLikes]="tweet.totalLikes"></app-likebutton>
+    </div>
+  </li>
+
+  <li class="media" *ngFor="let tweet of tweetsArray">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" src="{{tweet.img}}" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{tweet.name}}<span class="author">{{tweet.author}}</span></h4>
+        <div>Description goes here</div>
+        <app-likebutton [liked] = "tweet.liked" [totalLikes]="tweet.totalLikes"></app-likebutton>
+      </div>
+  </li>
+</ul>
