@@ -18,6 +18,11 @@ export class AppComponent {
       totalVotes: 10
   }
 
+  //custom pipes object
+  pipeObject = {
+    title: "Angular 2 custom pipes ex",
+    body:'Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It\'s also called placeholder (or filler) text. ... While lorem ipsum\'s still resembles classical Latin, it actually has no meaning whatsoever.'
+  }
   constructor() { }
 
   onChange($event){

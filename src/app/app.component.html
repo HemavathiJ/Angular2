@@ -1,17 +1,50 @@
 <h1>
   {{title}}
 </h1>
-<!-- <app-sample></app-sample>
-<input type="text" autoGrow>
+<div class="container">
+<!-- <app-sample></app-sample>-->
+<!-- <input type="text" autoGrow>
 
 <p> Star Task example</p>
 <app-star (change)="onChange($event)"></app-star>
 
-<p> Like Button Example</p>
+ <p> Like Button Example</p>
 <app-likebutton [liked] = "tweet.liked" [totalLikes]="tweet.totalLikes"></app-likebutton>
 
 <p> Voter Example </p>
 <app-voting-component [totalVotes]="voter.totalVotes" [myVote]="voter.myVote"></app-voting-component>
--->
+
 <p> Twitter example </p>
 <app-twitter-component></app-twitter-component>
+
+<p> Custom Pipe Sample! </p>
+<div>
+    {{pipeObject.tile}}
+    <br>
+    {{pipeObject.body | Summary:10 }}
+</div>
+
+<p> Panel Example </p>
+<app-panel> 
+  <div class="panelBody">  Panel component Body Content </div>
+  <div class="panelHeading">  Panel component Heading </div>
+</app-panel>
+
+-->
+
+<!--<p>Accordion Example </p>
+<app-accordion title="Accordion Title">
+  List of Accordion items
+</app-accordion>
+
+<p>Form Example </p>
+<app-form>
+</app-form>
+</div>
+
+<app-signup-form>
+</app-signup-form>
+-->
+<p> Password change form using form builder </p>
+<app-change-password>
+</app-change-password>

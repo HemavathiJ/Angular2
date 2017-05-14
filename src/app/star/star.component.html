@@ -1,9 +1,16 @@
 <p>
   star works!
   <span class="glyphicon"
-      [class.glyphicon-star-empty]="emptyStar"
-      [class.glyphicon-star]="!emptyStar"
+      [ngClass]="{
+            'glyphicon-star-empty': emptyStar,
+            'glyphicon-star': !emptyStar
+        }"
       (click)="onClick()"
    ></span>  
 </p>
 
+<!-- 
+  ** another way for bindng class **
+[class.glyphicon-star-empty]="emptyStar"
+    [class.glyphicon-star]="!emptyStar"
+-->

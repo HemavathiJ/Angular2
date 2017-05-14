@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <div class="panel-heading" (click)="toggleContent()" >
+    <div class="glyphicon" [ngClass]="{
+  'glyphicon-chevron-down': !toggleContentFlag,
+  'glyphicon-chevron-up': toggleContentFlag
+}"> {{title}} </div>
+  </div>
+<div *ngIf="!toggleContentFlag">
+  <ng-content></ng-content>
+</div>
+</div>
