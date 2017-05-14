@@ -2,9 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
+## How
+Clone the project using https://github.com/HemavathiJ/Angular2.git or download the zip file. Navigate to the folder where "package.json" resides. 
+Run `npm install`, which install all required dependency modules for this project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 
 ## Code scaffolding
 
